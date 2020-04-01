@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/04/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>测试博客</title>
+    <url>/2020/04/01/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="刘康靖"><a href="#刘康靖" class="headerlink" title="刘康靖"></a>刘康靖</h1><h2 id="写博客添加博客"><a href="#写博客添加博客" class="headerlink" title="写博客添加博客"></a>写博客添加博客</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><a id="more"></a>
+<!---->之后的内容不可见,点进博客之后才可见
+
+<ul>
+<li>列表1</li>
+<li>列表2<br>  a 子列表页<br>  b 子列表</li>
+<li>列表3</li>
+</ul>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">刘康靖sousuo</a></p>
+<p><img src="https://ae01.alicdn.com/kf/HTB1eE2mXPlxYKJjSZFuq6yYlVXay/Laeacco-Seaside-Wooden-View-Bridge-Platform-Scenic-Photography-Backgrounds-Vinyl-Custom-Photographic-Backdrops-For-Photo-Studio.jpg_640x640.jpg" alt="图片"></p>
+<p><em>斜体</em><br><strong>jia加粗</strong></p>
+<p><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;view class&#x3D;&quot;index_container&quot;&gt;</span><br><span class="line">  &lt;view class&#x3D;&quot;begin&quot; bindgetuserinfo type&#x3D;&quot;getUserInfo&quot; bindtap&#x3D;&quot;handleBegin&quot;&gt;</span><br><span class="line">        &lt;image mode&#x3D;&quot;widthFix&quot; src&#x3D;&quot;..&#x2F;..&#x2F;images&#x2F;begin.png&quot;&gt;&lt;&#x2F;image&gt;</span><br><span class="line">  &lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;view&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>我的内容是引用的</p>
+</blockquote>
+<hr>
+<hr>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+</search>
