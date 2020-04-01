@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Math类常用方法</title>
-    <url>/2020/04/01/Math%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="Math-floor-向下取整"><a href="#Math-floor-向下取整" class="headerlink" title="Math.floor() 向下取整"></a>Math.floor() 向下取整</h3><h3 id="Math-ceil-向上取整"><a href="#Math-ceil-向上取整" class="headerlink" title="Math.ceil()向上取整"></a>Math.ceil()向上取整</h3><h3 id="Math-round-四舍五入"><a href="#Math-round-四舍五入" class="headerlink" title="Math.round()四舍五入"></a>Math.round()四舍五入</h3><h3 id="Math-pow-2-3-2的3次方"><a href="#Math-pow-2-3-2的3次方" class="headerlink" title="Math.pow(2,3) 2的3次方"></a>Math.pow(2,3) 2的3次方</h3><h3 id="Math-random-0-1之间的随机小数"><a href="#Math-random-0-1之间的随机小数" class="headerlink" title="Math.random() 0-1之间的随机小数"></a>Math.random() 0-1之间的随机小数</h3><h3 id="Math-round-Math-random-100-0-100"><a href="#Math-round-Math-random-100-0-100" class="headerlink" title="Math.round(Math.random()*100)  0-100"></a>Math.round(Math.random()*100)  0-100</h3>]]></content>
+    <title>Array常用方法</title>
+    <url>/2020/04/01/Array%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>arr.push(‘xxx’) 末尾添加元素, 并返回数组的新长度<br>arr.pop()删除末尾元素并返回末尾元素<br>arr.unshift(‘’)在开头添加元素<br>arr.shift() 删除开头元素<br>arr.slice(0,2) 截取 抽取当前数组中的一段元素组合成一个新数组。包含0不包含2<br>arr.splice(1, 2) //删除某个下标的元素,  1是incex  2是删除几个<br>方法通过删除或替换现有元素或者原地添加新的元素来修改数组,并以数组形式返回被修改的内容。此方法会改变原数组。</p>
+<p>arr.john(‘x ‘) 将数组按指定字符x拼接成一个字符串,并返回字符串<br>arr.reverse()反转数组,并返回该数组,会改变原数组</p>
+<p>arr.findIndex((item)=&gt; item === undefined)<br>返回满足条件的数组元素的下标,没有返回-1</p>
+<p>arr.indexOf(xxx) 返回xxx元素在数组中的下标,没有返回-1</p>
+<p>arr.flat()   方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。<br>/使用 Infinity，可展开任意深度的嵌套数组<br>var arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];<br>arr4.flat(Infinity);<br>// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+<p>Array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。</p>
+<p>arr.map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。</p>
+]]></content>
       <categories>
         <category>常用方法</category>
       </categories>
@@ -19,16 +26,9 @@
       </categories>
   </entry>
   <entry>
-    <title>Array常用方法</title>
-    <url>/2020/04/01/Array%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>arr.push(‘xxx’) 末尾添加元素, 并返回数组的新长度<br>arr.pop()删除末尾元素并返回末尾元素<br>arr.unshift(‘’)在开头添加元素<br>arr.shift() 删除开头元素<br>arr.slice(0,2) 截取 抽取当前数组中的一段元素组合成一个新数组。包含0不包含2<br>arr.splice(1, 2) //删除某个下标的元素,  1是incex  2是删除几个<br>方法通过删除或替换现有元素或者原地添加新的元素来修改数组,并以数组形式返回被修改的内容。此方法会改变原数组。</p>
-<p>arr.john(‘x ‘) 将数组按指定字符x拼接成一个字符串,并返回字符串<br>arr.reverse()反转数组,并返回该数组,会改变原数组</p>
-<p>arr.findIndex((item)=&gt; item === undefined)<br>返回满足条件的数组元素的下标,没有返回-1</p>
-<p>arr.indexOf(xxx) 返回xxx元素在数组中的下标,没有返回-1</p>
-<p>arr.flat()   方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。<br>/使用 Infinity，可展开任意深度的嵌套数组<br>var arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];<br>arr4.flat(Infinity);<br>// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
-<p>Array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。</p>
-<p>arr.map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。</p>
-]]></content>
+    <title>Math类常用方法</title>
+    <url>/2020/04/01/Math%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="Math-floor-向下取整"><a href="#Math-floor-向下取整" class="headerlink" title="Math.floor() 向下取整"></a>Math.floor() 向下取整</h3><h3 id="Math-ceil-向上取整"><a href="#Math-ceil-向上取整" class="headerlink" title="Math.ceil()向上取整"></a>Math.ceil()向上取整</h3><h3 id="Math-round-四舍五入"><a href="#Math-round-四舍五入" class="headerlink" title="Math.round()四舍五入"></a>Math.round()四舍五入</h3><h3 id="Math-pow-2-3-2的3次方"><a href="#Math-pow-2-3-2的3次方" class="headerlink" title="Math.pow(2,3) 2的3次方"></a>Math.pow(2,3) 2的3次方</h3><h3 id="Math-random-0-1之间的随机小数"><a href="#Math-random-0-1之间的随机小数" class="headerlink" title="Math.random() 0-1之间的随机小数"></a>Math.random() 0-1之间的随机小数</h3><h3 id="Math-round-Math-random-100-0-100"><a href="#Math-round-Math-random-100-0-100" class="headerlink" title="Math.round(Math.random()*100)  0-100"></a>Math.round(Math.random()*100)  0-100</h3>]]></content>
       <categories>
         <category>常用方法</category>
       </categories>
@@ -89,19 +89,19 @@
       </categories>
   </entry>
   <entry>
-    <title>面试题--闭包</title>
-    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%97%AD%E5%8C%85/</url>
-    <content><![CDATA[<h3 id="闭包-内部函数引用外部函数的变量就会产生闭包"><a href="#闭包-内部函数引用外部函数的变量就会产生闭包" class="headerlink" title="闭包:内部函数引用外部函数的变量就会产生闭包"></a>闭包:内部函数引用外部函数的变量就会产生闭包</h3><p>可以用来封装设计私有的方法和变量<br><strong>优点:</strong>避免未然全局的方法和变量<br><strong>缺点:</strong>闭包会常驻内存,使用不当,容易造成内存泄漏</p>
-]]></content>
+    <title>面试题--递归数组</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%80%92%E5%BD%92%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>1.创建一个长度为5的空数组arr<br>2.生成一个2-32之间的随机整数x<br>3.把随机数x插入到数组arr内,如果arr内存在与x相同的数字,则重写生成随机数x并插入到arr内(需要使用递归实现)<br>4.最终输出一个长度为5,且内容不重复的数组aa</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码:"></a>代码:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr &#x3D; new Array(5)</span><br><span class="line">      </span><br><span class="line">        function digui(arr) &#123;</span><br><span class="line">          let a &#x3D;  Math.ceil(Math.random()*30+2)</span><br><span class="line">          if(arr.indexOf(a) &#x3D;&#x3D;&#x3D; -1)&#123;</span><br><span class="line">            var index &#x3D; arr.findIndex((item)&#x3D;&gt; item &#x3D;&#x3D;&#x3D; undefined)</span><br><span class="line">            if (index &#x3D;&#x3D;&#x3D; -1) &#123;</span><br><span class="line">                return</span><br><span class="line">            &#125;</span><br><span class="line">            arr[index] &#x3D; a</span><br><span class="line">            &#x2F;&#x2F; digui(arr)</span><br><span class="line">          &#125;</span><br><span class="line">          digui(arr)</span><br><span class="line">        &#125;</span><br><span class="line">        digui(arr) </span><br><span class="line">        </span><br><span class="line">        console.log(arr);</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>面试题</category>
       </categories>
   </entry>
   <entry>
-    <title>面试题--递归数组</title>
-    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%80%92%E5%BD%92%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>1.创建一个长度为5的空数组arr<br>2.生成一个2-32之间的随机整数x<br>3.把随机数x插入到数组arr内,如果arr内存在与x相同的数字,则重写生成随机数x并插入到arr内(需要使用递归实现)<br>4.最终输出一个长度为5,且内容不重复的数组aa</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码:"></a>代码:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr &#x3D; new Array(5)</span><br><span class="line">      </span><br><span class="line">        function digui(arr) &#123;</span><br><span class="line">          let a &#x3D;  Math.ceil(Math.random()*30+2)</span><br><span class="line">          if(arr.indexOf(a) &#x3D;&#x3D;&#x3D; -1)&#123;</span><br><span class="line">            var index &#x3D; arr.findIndex((item)&#x3D;&gt; item &#x3D;&#x3D;&#x3D; undefined)</span><br><span class="line">            if (index &#x3D;&#x3D;&#x3D; -1) &#123;</span><br><span class="line">                return</span><br><span class="line">            &#125;</span><br><span class="line">            arr[index] &#x3D; a</span><br><span class="line">            &#x2F;&#x2F; digui(arr)</span><br><span class="line">          &#125;</span><br><span class="line">          digui(arr)</span><br><span class="line">        &#125;</span><br><span class="line">        digui(arr) </span><br><span class="line">        </span><br><span class="line">        console.log(arr);</span><br></pre></td></tr></table></figure>]]></content>
+    <title>面试题--闭包</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%97%AD%E5%8C%85/</url>
+    <content><![CDATA[<h3 id="闭包-内部函数引用外部函数的变量就会产生闭包"><a href="#闭包-内部函数引用外部函数的变量就会产生闭包" class="headerlink" title="闭包:内部函数引用外部函数的变量就会产生闭包"></a>闭包:内部函数引用外部函数的变量就会产生闭包</h3><p>可以用来封装设计私有的方法和变量<br><strong>优点:</strong>避免未然全局的方法和变量<br><strong>缺点:</strong>闭包会常驻内存,使用不当,容易造成内存泄漏</p>
+]]></content>
       <categories>
         <category>面试题</category>
       </categories>
