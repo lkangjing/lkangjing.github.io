@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/04/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>Array常用方法</title>
+    <url>/2020/04/01/Array%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>arr.push(‘xxx’) 末尾添加元素, 并返回数组的新长度<br>arr.pop()删除末尾元素并返回末尾元素<br>arr.unshift(‘’)在开头添加元素<br>arr.shift() 删除开头元素<br>arr.slice(0,2) 截取 抽取当前数组中的一段元素组合成一个新数组。包含0不包含2<br>arr.splice(1, 2) //删除某个下标的元素,  1是incex  2是删除几个<br>方法通过删除或替换现有元素或者原地添加新的元素来修改数组,并以数组形式返回被修改的内容。此方法会改变原数组。</p>
+<p>arr.john(‘x ‘) 将数组按指定字符x拼接成一个字符串,并返回字符串<br>arr.reverse()反转数组,并返回该数组,会改变原数组</p>
+<p>arr.findIndex((item)=&gt; item === undefined)<br>返回满足条件的数组元素的下标,没有返回-1</p>
+<p>arr.indexOf(xxx) 返回xxx元素在数组中的下标,没有返回-1</p>
+<p>arr.flat()   方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。<br>/使用 Infinity，可展开任意深度的嵌套数组<br>var arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];<br>arr4.flat(Infinity);<br>// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+<p>Array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。</p>
+<p>arr.map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。</p>
 ]]></content>
+      <categories>
+        <category>常用方法</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Git指令</title>
+    <url>/2020/04/01/Git%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>git init<br>git log 查看历史记录<br>git checkout 分支名  穿越到指定的分支<br>git checkout -  回到上一个版本<br>git add .  git add ./-a<br>git commit -m “first commit”<br>git remote add 远程仓库名  地址<br>git remote add origin <a href="https://github.com/kangjing-js/ceshi.git" target="_blank" rel="noopener">https://github.com/kangjing-js/ceshi.git</a><br>git remote 查看远程名<br>git push -u 远程名 分支名<br>git tag -a 标签名 -m”备注”  打标签<br>git tag -a 标签名 -m”备注” 节点id   在某个节点打标签<br>git show 标签名 查看某个标签的详细信息<br>git branch 分支名  创建分支<br>git merge 分支名  合并分支<br>git branch 查看分支<br>本地项目更新一段时间之后,再创建远程仓库,<br>使用允许无关联的历史记录的参数拉取之后再 push<br>    git pull origin master –allow-unrelated-histories<br>    git push</p>
+<p>错误:error: failed to push some refs to ‘<a href="https://github.com/kangjing-js/PersonalBlog.git&#39;" target="_blank" rel="noopener">https://github.com/kangjing-js/PersonalBlog.git&#39;</a><br>这是因为远程库里面有个文件，但是本地没有这个文件，完全提交上去会覆盖之前的文件（通常是因为远程库自动生成了一个REMAND.MD的文件原因，但是本地没有add到这个文件）<br>我们直接强制push 下就可以了：<br>git push -u origin master -f</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Math类常用方法</title>
+    <url>/2020/04/01/Math%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="Math-floor-向下取整"><a href="#Math-floor-向下取整" class="headerlink" title="Math.floor() 向下取整"></a>Math.floor() 向下取整</h3><h3 id="Math-ceil-向上取整"><a href="#Math-ceil-向上取整" class="headerlink" title="Math.ceil()向上取整"></a>Math.ceil()向上取整</h3><h3 id="Math-round-四舍五入"><a href="#Math-round-四舍五入" class="headerlink" title="Math.round()四舍五入"></a>Math.round()四舍五入</h3><h3 id="Math-pow-2-3-2的3次方"><a href="#Math-pow-2-3-2的3次方" class="headerlink" title="Math.pow(2,3) 2的3次方"></a>Math.pow(2,3) 2的3次方</h3><h3 id="Math-random-0-1之间的随机小数"><a href="#Math-random-0-1之间的随机小数" class="headerlink" title="Math.random() 0-1之间的随机小数"></a>Math.random() 0-1之间的随机小数</h3><h3 id="Math-round-Math-random-100-0-100"><a href="#Math-round-Math-random-100-0-100" class="headerlink" title="Math.round(Math.random()*100)  0-100"></a>Math.round(Math.random()*100)  0-100</h3>]]></content>
+      <categories>
+        <category>常用方法</category>
+      </categories>
   </entry>
   <entry>
     <title>测试博客</title>
@@ -44,9 +59,60 @@
       <categories>
         <category>前端</category>
       </categories>
-      <tags>
-        <tag>导航</tag>
-        <tag>分享</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>面试题--BFC</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-BFC/</url>
+    <content><![CDATA[<p>BFC 就是块级格式化上下文,是一个独立的布局容器,里面元素不会受到外面的影响<br>display 属性为 block, list-item, table 的元素，会产生BFC.</p>
+<h3 id="下列方式会创建块格式化上下文："><a href="#下列方式会创建块格式化上下文：" class="headerlink" title="下列方式会创建块格式化上下文："></a>下列方式会创建块格式化上下文：</h3><p>根元素(<html>)<br>浮动元素（元素的 float 不是 none）<br>绝对定位元素（元素的 position 为 absolute 或 fixed）<br>行内块元素（元素的 display 为 inline-block）<br>表格单元格（元素的 display为 table-cell，HTML表格单元格默认为该值）<br>表格标题（元素的 display 为 table-caption，HTML表格标题默认为该值）<br>匿名表格单元格元素（元素的 display为 table、table-row、 table-row-group、table-header-group、table-footer-group（分别是HTML table、row、tbody、thead、tfoot的默认属性）或 inline-table）<br>overflow 值不为 visible 的块元素<br>display 值为 flow-root 的元素<br>contain 值为 layout、content或 paint 的元素<br>弹性元素（display为 flex 或 inline-flex元素的直接子元素）<br>网格元素（display为 grid 或 inline-grid 元素的直接子元素）<br>多列容器（元素的 column-count 或 column-width 不为 auto，包括 column-count 为 1）<br>column-span 为 all 的元素始终会创建一个新的BFC，即使该元素没有包裹在一个多列容器中（标准变更，Chrome bug）。</html></p>
+<h3 id="BFC的用处"><a href="#BFC的用处" class="headerlink" title="BFC的用处"></a>BFC的用处</h3><p>清除浮动<br>给父元素开启BFC,就可以清楚子元素的浮动</p>
+<p>解决相邻两个元素的外边距重叠问题<br>给相邻两个元素分别开启BFC</p>
+<p>BFC(Block Formatting Context) 块级格式化</p>
+<pre><code>-BFC是一个css中的一个隐含的属性,可以为一个元素开启bfc,该元素会变成一个独立的布局区域
+-开启bfc后的特点:
+        1.开启bfc的元素不会被浮动元素所覆盖
+        2.开启bfc的元素子元素和父元素外边距不会重叠
+        3.开启bfc的元素可以包含浮动的子元素
+
+-开启bfc
+        1.设置元素浮动(不推荐)
+        2.将元素设置为行内块元素(不推荐)
+        3.将元素overflow设置为非visible的值
+                -常用方式:为元素设置overflow:hidden  开启bfc 使其可以包含浮动元素</code></pre><p>clear:<br>    作用:清除浮动元素对当前元素所产生的影响<br>    可选值: left right both</p>
+<p>.clearfix:before,<br>.clearfix:after {<br>    content:’ ‘,<br>    display:table / block;<br>    clear:both;<br>}</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>面试题--递归数组</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%80%92%E5%BD%92%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>1.创建一个长度为5的空数组arr<br>2.生成一个2-32之间的随机整数x<br>3.把随机数x插入到数组arr内,如果arr内存在与x相同的数字,则重写生成随机数x并插入到arr内(需要使用递归实现)<br>4.最终输出一个长度为5,且内容不重复的数组aa</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码:"></a>代码:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr &#x3D; new Array(5)</span><br><span class="line">      </span><br><span class="line">        function digui(arr) &#123;</span><br><span class="line">          let a &#x3D;  Math.ceil(Math.random()*30+2)</span><br><span class="line">          if(arr.indexOf(a) &#x3D;&#x3D;&#x3D; -1)&#123;</span><br><span class="line">            var index &#x3D; arr.findIndex((item)&#x3D;&gt; item &#x3D;&#x3D;&#x3D; undefined)</span><br><span class="line">            if (index &#x3D;&#x3D;&#x3D; -1) &#123;</span><br><span class="line">                return</span><br><span class="line">            &#125;</span><br><span class="line">            arr[index] &#x3D; a</span><br><span class="line">            &#x2F;&#x2F; digui(arr)</span><br><span class="line">          &#125;</span><br><span class="line">          digui(arr)</span><br><span class="line">        &#125;</span><br><span class="line">        digui(arr) </span><br><span class="line">        </span><br><span class="line">        console.log(arr);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>面试题--闭包</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%97%AD%E5%8C%85/</url>
+    <content><![CDATA[<h3 id="闭包-内部函数引用外部函数的变量就会产生闭包"><a href="#闭包-内部函数引用外部函数的变量就会产生闭包" class="headerlink" title="闭包:内部函数引用外部函数的变量就会产生闭包"></a>闭包:内部函数引用外部函数的变量就会产生闭包</h3><p>可以用来封装设计私有的方法和变量<br><strong>优点:</strong>避免未然全局的方法和变量<br><strong>缺点:</strong>闭包会常驻内存,使用不当,容易造成内存泄漏</p>
+]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>面试题--防抖和节流</title>
+    <url>/2020/04/01/%E9%9D%A2%E8%AF%95%E9%A2%98-%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</url>
+    <content><![CDATA[<h3 id="1-防抖函数"><a href="#1-防抖函数" class="headerlink" title="1. 防抖函数"></a>1. 防抖函数</h3><p>触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间<br>防抖函数，一个需要频繁触发的函数，在规定时间内，只让最后一次生效，前面的不生效</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 防抖函数，一个需要频繁触发的函数，在规定时间内，只让最后一次生效，前面的不生效 *&#x2F;</span><br><span class="line">      function debounce(fn,delay)&#123;</span><br><span class="line">        var timer&#x3D; null;</span><br><span class="line">        return function()&#123;</span><br><span class="line">          &#x2F;&#x2F;清楚延时器</span><br><span class="line">          clearTimeout(timer);</span><br><span class="line">          &#x2F;&#x2F;重新设置新的延时器</span><br><span class="line">          timer &#x3D; setTimeout(function()&#123;</span><br><span class="line">            fn.apply(this);</span><br><span class="line">          &#125;,delay)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      document.getElementById(&quot;btn&quot;).onclick&#x3D;debounce(function()&#123;</span><br><span class="line">        console.log(&quot;点击事件被触发了&quot;+Date.now());</span><br><span class="line">      &#125;,1000)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-节流函数"><a href="#2-节流函数" class="headerlink" title="2. 节流函数"></a>2. 节流函数</h3><p>高频事件触发，但在n秒内只会执行一次，所以节流会稀释函数的执行频率<br>一个函数执行一次后，只有大于执行周期后才会执行第二次，<br>         –   有个需要频繁触发的函数<br>                 处于优化性能的角度，在规定事件内，只让函数触发的第一次生效，后面的不生效</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;fn要被节流的函数 delay规定时间</span><br><span class="line">       function throttle(fn,delay)&#123;</span><br><span class="line">         &#x2F;&#x2F;记录上次函数触发的时间</span><br><span class="line">         var lastTime &#x3D; 0;</span><br><span class="line">         return function()&#123;</span><br><span class="line">            &#x2F;&#x2F;记录当前函数触发的时间</span><br><span class="line">            var nowTime&#x3D;Date.now();</span><br><span class="line">            if(nowTime-lastTime&gt;&#x3D;delay)&#123;</span><br><span class="line">                fn();</span><br><span class="line">                &#x2F;&#x2F;同步时间</span><br><span class="line">                lastTime&#x3D;nowTime;</span><br><span class="line">            &#125;</span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       document.onscroll&#x3D;throttle(function()&#123;</span><br><span class="line">          console.log(&quot;throttle 事件被触发了&quot;+Date.now());</span><br><span class="line">       &#125;,200)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>面试题</category>
+      </categories>
   </entry>
 </search>
